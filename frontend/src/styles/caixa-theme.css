@@ -1,0 +1,204 @@
+/**
+ * Tema CAIXA Econômica Federal
+ * Autor: GuacPlayer Team
+ * Data: 2025
+ * Descrição: Estilos customizados com identidade visual CAIXA
+ */
+
+/* Cores CAIXA */
+:root {
+  --caixa-blue: #0643AA;
+  --caixa-orange: #E4781A;
+  --caixa-light-gray: #F5F5F5;
+  --caixa-dark-gray: #333333;
+  --caixa-border: #CCCCCC;
+  --caixa-success: #28A745;
+  --caixa-error: #DC3545;
+  --caixa-warning: #FFC107;
+  --caixa-info: #17A2B8;
+}
+
+/* Botões CAIXA */
+.btn-primary {
+  @apply px-6 py-2 bg-caixa-primary text-white font-semibold rounded-lg;
+  @apply hover:bg-blue-900 transition-colors duration-200;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-caixa-primary;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 bg-caixa-accent text-white font-semibold rounded-lg;
+  @apply hover:bg-orange-600 transition-colors duration-200;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-caixa-accent;
+}
+
+.btn-outline {
+  @apply px-6 py-2 border-2 border-caixa-primary text-caixa-primary font-semibold rounded-lg;
+  @apply hover:bg-caixa-primary hover:text-white transition-colors duration-200;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-caixa-primary;
+}
+
+.btn-small {
+  @apply px-3 py-1 text-sm;
+}
+
+.btn-large {
+  @apply px-8 py-3 text-lg;
+}
+
+/* Cards CAIXA */
+.card {
+  @apply bg-white rounded-lg shadow-md p-6;
+  @apply border-l-4 border-caixa-primary;
+  @apply transition-all duration-200 hover:shadow-lg;
+}
+
+.card-accent {
+  @apply border-l-4 border-caixa-accent;
+}
+
+/* Inputs CAIXA */
+.input-field {
+  @apply w-full px-4 py-2 border border-caixa-border rounded-lg;
+  @apply focus:outline-none focus:ring-2 focus:ring-caixa-primary focus:border-transparent;
+  @apply transition-all duration-200;
+}
+
+.input-field::placeholder {
+  @apply text-gray-400;
+}
+
+.input-field:disabled {
+  @apply bg-caixa-light cursor-not-allowed;
+}
+
+/* Headers CAIXA */
+.header-caixa {
+  @apply bg-caixa-primary text-white;
+  @apply shadow-lg;
+}
+
+.header-caixa h1 {
+  @apply text-3xl font-bold;
+}
+
+.header-caixa p {
+  @apply text-blue-100;
+}
+
+/* Badges CAIXA */
+.badge {
+  @apply inline-block px-3 py-1 rounded-full text-sm font-semibold;
+  @apply bg-caixa-primary text-white;
+}
+
+.badge-accent {
+  @apply bg-caixa-accent text-white;
+}
+
+.badge-success {
+  @apply bg-caixa-success text-white;
+}
+
+.badge-error {
+  @apply bg-caixa-error text-white;
+}
+
+.badge-warning {
+  @apply bg-caixa-warning text-caixa-dark-gray;
+}
+
+/* Tabelas CAIXA */
+.table-caixa {
+  @apply w-full border-collapse;
+}
+
+.table-caixa thead {
+  @apply bg-caixa-primary text-white;
+}
+
+.table-caixa th {
+  @apply px-6 py-3 text-left font-semibold;
+}
+
+.table-caixa td {
+  @apply px-6 py-3 border-b border-caixa-border;
+}
+
+.table-caixa tbody tr:hover {
+  @apply bg-caixa-light;
+}
+
+/* Modais CAIXA */
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.modal-content {
+  @apply bg-white rounded-lg shadow-2xl max-w-2xl w-full mx-4;
+  @apply border-t-4 border-caixa-primary;
+}
+
+.modal-header {
+  @apply bg-caixa-primary text-white px-6 py-4 rounded-t-lg;
+}
+
+.modal-body {
+  @apply p-6;
+}
+
+.modal-footer {
+  @apply bg-caixa-light px-6 py-4 rounded-b-lg flex justify-end gap-3;
+}
+
+/* Alertas CAIXA */
+.alert {
+  @apply px-4 py-3 rounded-lg border-l-4 mb-4;
+}
+
+.alert-success {
+  @apply bg-green-50 border-l-4 border-caixa-success text-caixa-success;
+}
+
+.alert-error {
+  @apply bg-red-50 border-l-4 border-caixa-error text-caixa-error;
+}
+
+.alert-warning {
+  @apply bg-yellow-50 border-l-4 border-caixa-warning text-caixa-warning;
+}
+
+.alert-info {
+  @apply bg-blue-50 border-l-4 border-caixa-info text-caixa-info;
+}
+
+/* Spinner CAIXA */
+.spinner {
+  @apply inline-block w-4 h-4 border-2 border-caixa-primary border-t-transparent rounded-full animate-spin;
+}
+
+/* Gradientes CAIXA */
+.gradient-caixa {
+  background: linear-gradient(135deg, var(--caixa-blue) 0%, var(--caixa-orange) 100%);
+}
+
+.gradient-caixa-reverse {
+  background: linear-gradient(135deg, var(--caixa-orange) 0%, var(--caixa-blue) 100%);
+}
+
+/* Sombras CAIXA */
+.shadow-caixa {
+  box-shadow: 0 4px 12px rgba(6, 67, 170, 0.15);
+}
+
+.shadow-caixa-hover {
+  box-shadow: 0 8px 24px rgba(6, 67, 170, 0.25);
+}
+
+/* Dividers */
+.divider {
+  @apply border-t border-caixa-border my-4;
+}
+
+.divider-accent {
+  @apply border-t-2 border-caixa-accent my-4;
+}
