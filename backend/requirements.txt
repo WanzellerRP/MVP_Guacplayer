@@ -3,21 +3,21 @@
 # Data: 2025
 
 # Framework Web
-Flask==3.0.0
-Flask-CORS==4.0.0
+Flask>=3.0.0
+Flask-CORS>=4.0.0
 
 # Banco de Dados
-psycopg2-binary==2.9.9
+psycopg2-binary>=2.9.9
 
 # Autenticação e Segurança
-PyJWT==2.8.1
+PyJWT>=2.8.0
 
 # Utilitários
-python-dotenv==1.0.0
-python-dateutil==2.8.2
+python-dotenv>=1.0.0
+python-dateutil>=2.8.2
 
 # Logging e Monitoramento
-python-json-logger==2.0.7
+python-json-logger>=2.0.7
 
 # Desenvolvimento e Testes
 pytest==7.4.3
